@@ -27,7 +27,16 @@ public class customer {
 	private String customerAddress;
 	private String userName;
 	private String password;
+	private String type;
+	
+	public String gettype() {
+		return type;
+	}
 
+	public void settype(String type) {
+		this.type = type;
+	}
+	
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -59,7 +68,7 @@ public class customer {
 	public void setCustomerEmail(String customerEmail) {
 		this.customerEmail = customerEmail;
 	}
-
+	
 	public String getCustomerAddress() {
 		return customerAddress;
 	}
