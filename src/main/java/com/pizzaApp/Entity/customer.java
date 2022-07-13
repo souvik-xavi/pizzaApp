@@ -27,6 +27,7 @@ public class customer {
 	private String customerAddress;
 	private String userName;
 	private String password;
+	private String type;
 
 	public int getCustomerId() {
 		return customerId;
@@ -83,5 +84,14 @@ public class customer {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+
     
 }
