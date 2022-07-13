@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class customer {
+public class Customer {
     @Id
 	@SequenceGenerator(
 	           name ="user_sequence",
