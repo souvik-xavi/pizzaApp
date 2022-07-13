@@ -2,18 +2,34 @@ package com.pizzaApp.Entity;
 
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
+@Entity
+@Table
 public class PizzaOrder {
-
-
+	@Id
+	@SequenceGenerator(
+	           name ="user_sequence",
+	           sequenceName = "user_sequence",
+	           allocationSize = 1
+	   )
+	@GeneratedValue(
+	           strategy = GenerationType.SEQUENCE,
+	           generator = "user_sequence"
+	   )
 	private int bookingOrderId;
 	private LocalDate dateOfOrder;
 	private String transactionMode;
 	private int quantity;
 	private String size;//medium,regular,large
 	private double totalCost;
-	private Order order;
-	private Coupan coupan;
+	private int orderId;
+	private int coupan;
 	public int getBookingOrderId() {
 		return bookingOrderId;
 	}
@@ -51,16 +67,16 @@ public class PizzaOrder {
 		this.totalCost = totalCost;
 	}
 
-	public Order getOrder() {
-		return order;
+	public int getorderId() {
+		return orderId;
 	}
-	public void setOrder(Order order) {
-		this.order = order;
+	public void setOrder(int orderId) {
+		this.orderId = orderId;
 	}
-	public Coupan getCoupan() {
+	public int getCoupan() {
 		return coupan;
 	}
-	public void setCoupan(Coupan coupan) {
+	public void setCoupan(int coupan) {
 		this.coupan = coupan;
 	} 
 	

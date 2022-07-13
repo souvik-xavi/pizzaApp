@@ -1,7 +1,24 @@
 package com.pizzaApp.Entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+@Entity
+@Table
 public class Pizza {
-
+	@Id
+	@SequenceGenerator(
+	           name ="user_sequence",
+	           sequenceName = "user_sequence",
+	           allocationSize = 1
+	   )
+	@GeneratedValue(
+	           strategy = GenerationType.SEQUENCE,
+	           generator = "user_sequence"
+	   )
 	private int pizzaId;
 	private String pizzaType;
 	private String pizzaName;
