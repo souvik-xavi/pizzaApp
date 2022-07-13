@@ -24,11 +24,31 @@ public class Customer {
 	private String customerName;
 	private Long customerMobile;
 	private String customerEmail;
+	public Customer() {
+		super();
+	}
+
 	private String customerAddress;
 	private String userName;
 	private String password;
 	private String type;
 	
+	
+	public Customer(String customerName, String customerEmail, String password) {
+		super();
+		this.customerName = customerName;
+		this.customerEmail = customerEmail;
+		this.password = password;
+	}
+
+	public Customer(int customerId, String customerName, String customerEmail, String password) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.customerEmail = customerEmail;
+		this.password = password;
+	}
+
 	public String gettype() {
 		return type;
 	}
