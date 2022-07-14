@@ -1,5 +1,6 @@
 package com.pizzaApp.Controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,21 +9,29 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pizzaApp.Entity.Customer;
+import com.pizzaApp.Services.LoginServices;
 @RestController
 public class CustomerController {
+    @Autowired
+    LoginServices loginservices;
 	
     @GetMapping(value="/")
 	public  String add(){
         return "Hello World";
     }
-    @PostMapping("/request")	
-    public ResponseEntity postController(      @RequestBody Customer loginF  		) 
+
+
+    @PostMapping("/register")	
+    public ResponseEntity postController(@RequestBody Customer customer) 
     		{
-    			System.out.println(loginF.getCustomerName());
-    			System.out.println(loginF.getCustomerEmail());
-    			System.out.println(loginF.getPassword());
+    		
+                if(loginservices.register(customer)){
+                    return ResponseEntity.status(HttpStatus.OK).body(customer);
+
+                }
+
      
       
-        return ResponseEntity.ok(HttpStatus.OK);
+        return ResponseEntity.status(HttpStatus.FOUND).body("customer already exist");
     }
 }
