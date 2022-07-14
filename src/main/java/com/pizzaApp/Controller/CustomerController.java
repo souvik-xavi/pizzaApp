@@ -39,10 +39,6 @@ public class CustomerController {
     @PostMapping("/login")	
     public ResponseEntity login(@RequestBody User customer) 
     		{
-    		
-            loginservices.login(customer);   
-     
-      
-        return ResponseEntity.status(HttpStatus.FOUND).body("Hi");
+        return ResponseEntity.status(HttpStatus.FOUND).body(loginservices.login(customer));
     }
 }

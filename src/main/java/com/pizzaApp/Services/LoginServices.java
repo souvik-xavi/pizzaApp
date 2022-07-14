@@ -24,15 +24,19 @@ public class LoginServices {
         
 
     }
-    public void login(User customer) {
+    public String login(User customer) {
 
         Customer cust=customerRepository.findByCustomerEmail(customer.getUserEmail());
         if(cust==null){
-            System.out.print("user doesn't exsist");
+            return "UNF";
         }
         else{
-            System.out.println("user found");
+            if(cust.getPassword().equals(customer.getUserPassword())){
+                return "accepted";
+            }
         }
+
+        return "declined";
         
     }
     
