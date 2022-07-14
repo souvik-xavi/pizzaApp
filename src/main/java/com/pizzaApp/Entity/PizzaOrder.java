@@ -30,6 +30,7 @@ public class PizzaOrder {
 	private double totalCost;
 	private int orderId;
 	private int coupan;
+	private double pizzaCostAfterCoupan;
 	public int getBookingOrderId() {
 		return bookingOrderId;
 	}
@@ -79,6 +80,12 @@ public class PizzaOrder {
 	public void setCoupan(int coupan) {
 		this.coupan = coupan;
 	} 
+	public double getPizzaCostAfterCoupan() {
+		return pizzaCostAfterCoupan;
+	}
+	public void setPizzaCostAfterCoupan(double pizzaCostAfterCoupan) {
+		this.pizzaCostAfterCoupan = pizzaCostAfterCoupan;
+	}
 	
 
 
