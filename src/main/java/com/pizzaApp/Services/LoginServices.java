@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pizzaApp.Entity.Customer;
+import com.pizzaApp.Entity.User;
 import com.pizzaApp.Repository.CustomerRepository;
 
 @Service
@@ -22,6 +23,17 @@ public class LoginServices {
         }
         
 
+    }
+    public void login(User customer) {
+
+        Customer cust=customerRepository.findByCustomerEmail(customer.getUserEmail());
+        if(cust==null){
+            System.out.print("user doesn't exsist");
+        }
+        else{
+            System.out.println("user found");
+        }
+        
     }
     
 }

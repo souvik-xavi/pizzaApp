@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pizzaApp.Entity.Customer;
+import com.pizzaApp.Entity.User;
 import com.pizzaApp.Services.LoginServices;
 @RestController
 public class CustomerController {
@@ -22,7 +23,7 @@ public class CustomerController {
 
 
     @PostMapping("/register")	
-    public ResponseEntity postController(@RequestBody Customer customer) 
+    public ResponseEntity register(@RequestBody Customer customer) 
     		{
     		
                 if(loginservices.register(customer)){
@@ -33,5 +34,15 @@ public class CustomerController {
      
       
         return ResponseEntity.status(HttpStatus.FOUND).body("customer already exist");
+    }
+
+    @PostMapping("/login")	
+    public ResponseEntity login(@RequestBody User customer) 
+    		{
+    		
+            loginservices.login(customer);   
+     
+      
+        return ResponseEntity.status(HttpStatus.FOUND).body("Hi");
     }
 }
