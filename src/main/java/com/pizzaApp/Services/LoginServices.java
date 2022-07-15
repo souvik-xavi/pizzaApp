@@ -1,9 +1,12 @@
 package com.pizzaApp.Services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pizzaApp.Entity.Customer;
+import com.pizzaApp.Entity.Pizza;
 import com.pizzaApp.Entity.User;
 import com.pizzaApp.Repository.CustomerRepository;
 
@@ -42,5 +45,20 @@ public class LoginServices {
         return "declined";
         
     }
+	public void updateCustomer(Customer customer) 
+	{
+		if(customerRepository.findById(customer.getCustomerId()).isPresent())
+		{
+			Customer c=customerRepository.findById(customer.getCustomerId()).get();
+			c.setCustomerName(customer.getCustomerName());
+			c.setCustomerAddress(customer.getCustomerAddress());
+			c.setCustomerMobile(customer.getCustomerMobile());
+			customerRepository.save(c);
+		}
+	}
+	public List viewCustomerList() 
+	{
+		return customerRepository.findAll();
+	}
     
 }
