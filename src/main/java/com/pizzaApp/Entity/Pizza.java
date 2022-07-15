@@ -64,6 +64,12 @@ public class Pizza {
 	public Pizza() {
 		super();
 	}
+	public Pizza(String pizzaType, String pizzaName, String pizzaDescription, double pizzaCost) {
+		this.pizzaType = pizzaType;
+		this.pizzaName = pizzaName;
+		this.pizzaDescription = pizzaDescription;
+		this.pizzaCost = pizzaCost;
+	}
 	
 
 
