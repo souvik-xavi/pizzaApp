@@ -3,6 +3,7 @@ package com.pizzaApp.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -14,10 +15,10 @@ public class CouponController {
     @Autowired
     CouponService couponService;
 
-    @PostMapping("/addCoupon")
-    public Boolean addCoupon(@RequestBody Coupan coupan) {
+    @PostMapping("/addCoupon/{customerId}")
+    public Boolean addCoupon(@RequestBody Coupan coupan,@PathVariable int customerId) {
 
-        couponService.addCoupon(coupan);
+        couponService.addCoupon(coupan,customerId);
 
         return true;
     }
