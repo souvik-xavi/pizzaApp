@@ -25,7 +25,7 @@ public class CustomerController {
     @PostMapping("/register")	
     public ResponseEntity register(@RequestBody Customer customer) 
     		{
-    		
+                
                 if(loginservices.register(customer)){
                     return ResponseEntity.status(HttpStatus.OK).body(customer);
 

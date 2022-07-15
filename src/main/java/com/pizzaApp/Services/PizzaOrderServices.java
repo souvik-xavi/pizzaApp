@@ -9,8 +9,10 @@ public class PizzaOrderServices {
 	@Autowired
 	PizzaOrderRepository pizzaOrderRepository;
 	public boolean bookPizzaOrder(PizzaOrder pizzaOrder) {
-		PizzaOrder P = PizzaOrderRepository.findBybookingOrderId(pizzaOrder.getBookingOrderId());
-		
+		PizzaOrder P = pizzaOrderRepository.findBybookingOrderId(pizzaOrder.getorderId());
+
+
+		return true;
 	}
 	
 

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 import com.pizzaApp.Entity.PizzaOrder;
 
 @Repository
-public interface PizzaOrderRepository extends JpaRepository  {
+public interface PizzaOrderRepository extends JpaRepository<PizzaOrder,Integer> {
 	@Query("select u from PizzaOrder u where u.bookingOrderId=?1")
-	PizzaOrder findBybookingOrderId(String PizzaOrder);
+	PizzaOrder findBybookingOrderId(int PizzaOrder);
 
 }
