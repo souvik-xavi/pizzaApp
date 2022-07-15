@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.pizzaApp.Entity.Customer;
 import com.pizzaApp.Entity.Pizza;
 import com.pizzaApp.Entity.User;
+import com.pizzaApp.Exceptions.ResourceAlreadyExistException;
+import com.pizzaApp.Exceptions.ResourceNotFoundException;
 import com.pizzaApp.Repository.CustomerRepository;
 
 @Service
@@ -22,8 +24,8 @@ public class LoginServices {
             return true;
         }
         else{
-            System.out.println("customer already exist");
-            return false;
+            
+            throw new ResourceAlreadyExistException("User Aleady exist");
         }
         
 
@@ -31,8 +33,9 @@ public class LoginServices {
     public String login(User customer) {
 
         Customer cust=customerRepository.findByCustomerEmail(customer.getUserEmail());
+        System.out.print(cust);;
         if(cust==null){
-            return "UNF";
+            throw new ResourceNotFoundException("User not found ");
         }
         else{
             if(cust.getPassword().equals(customer.getUserPassword())){
