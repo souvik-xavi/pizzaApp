@@ -31,6 +31,14 @@ public class PizzaOrder {
 	private int orderId;
 	private int coupan;
 	private double pizzaCostAfterCoupan;
+	private String pizzaName;
+	private int customerId;
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
 	public int getBookingOrderId() {
 		return bookingOrderId;
 	}
@@ -116,6 +124,12 @@ public class PizzaOrder {
 	}
 	public void setPizzaCostAfterCoupan(double pizzaCostAfterCoupan) {
 		this.pizzaCostAfterCoupan = pizzaCostAfterCoupan;
+	}
+	public String getPizzaName() {
+		return pizzaName;
+	}
+	public void setPizzaName(String pizzaName) {
+		this.pizzaName = pizzaName;
 	}
 	
 

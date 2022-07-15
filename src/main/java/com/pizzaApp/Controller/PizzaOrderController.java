@@ -3,6 +3,7 @@ package com.pizzaApp.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,15 +16,11 @@ public class PizzaOrderController {
 	@Autowired
 	PizzaOrderServices pizzaorderservices;
 
-	@PostMapping("/addPizzaOrder")
-	public ResponseEntity bookPizzaOrder(@RequestBody PizzaOrder pizzaOrder)
-	{
-		if(pizzaorderservices.bookPizzaOrder(pizzaOrder))
-        {
-            return ResponseEntity.status(HttpStatus.OK).body(pizzaOrder);
-
-        }
-
-        	return ResponseEntity.status(HttpStatus.FOUND).body("pizzaOrder already exist");
+	@PostMapping("/addPizzaOrder/{customerId}/{pizzaid}")
+	public ResponseEntity bookPizzaOrder(@RequestBody PizzaOrder pizzaOrder, @PathVariable int customerId,
+			@PathVariable int pizzaid) {
+		pizzaorderservices.bookPizzaOrder(pizzaOrder,customerId,pizzaid);
+		return ResponseEntity.status(HttpStatus.OK).body("Pizza Deleted");
 	}
+
 }
