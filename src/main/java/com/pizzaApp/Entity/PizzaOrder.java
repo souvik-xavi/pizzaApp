@@ -34,6 +34,37 @@ public class PizzaOrder {
 	public int getBookingOrderId() {
 		return bookingOrderId;
 	}
+	public int getOrderId() {
+		return orderId;
+	}
+	public PizzaOrder(int bookingOrderId, LocalDate dateOfOrder, String transactionMode, int quantity, String size,
+			double totalCost, int orderId, int coupan, double pizzaCostAfterCoupan) {
+		this.bookingOrderId = bookingOrderId;
+		this.dateOfOrder = dateOfOrder;
+		this.transactionMode = transactionMode;
+		this.quantity = quantity;
+		this.size = size;
+		this.totalCost = totalCost;
+		this.orderId = orderId;
+		this.coupan = coupan;
+		this.pizzaCostAfterCoupan = pizzaCostAfterCoupan;
+	}
+	public PizzaOrder() {
+	}
+	public PizzaOrder(LocalDate dateOfOrder, String transactionMode, int quantity, String size, double totalCost,
+			int orderId, int coupan, double pizzaCostAfterCoupan) {
+		this.dateOfOrder = dateOfOrder;
+		this.transactionMode = transactionMode;
+		this.quantity = quantity;
+		this.size = size;
+		this.totalCost = totalCost;
+		this.orderId = orderId;
+		this.coupan = coupan;
+		this.pizzaCostAfterCoupan = pizzaCostAfterCoupan;
+	}
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
 	public void setBookingOrderId(int bookingOrderId) {
 		this.bookingOrderId = bookingOrderId;
 	}

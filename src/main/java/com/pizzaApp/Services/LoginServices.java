@@ -14,6 +14,7 @@ public class LoginServices {
     public boolean register(Customer customer) {
         Customer cust=customerRepository.findByCustomerEmail(customer.getCustomerEmail());
         if(cust==null){
+            customer.settype("user");
             customerRepository.save(customer);
             return true;
         }
@@ -32,6 +33,8 @@ public class LoginServices {
         }
         else{
             if(cust.getPassword().equals(customer.getUserPassword())){
+                cust.setLoginStatus(true);
+                customerRepository.save(cust);
                 return "accepted";
             }
         }
