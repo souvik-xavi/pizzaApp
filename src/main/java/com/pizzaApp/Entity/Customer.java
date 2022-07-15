@@ -28,10 +28,19 @@ public class Customer {
 		super();
 	}
 
+	public boolean isLoginStatus() {
+		return loginStatus;
+	}
+
+	public void setLoginStatus(boolean loginStatus) {
+		this.loginStatus = loginStatus;
+	}
+
 	private String customerAddress;
 	private String userName;
 	private String password;
 	private String type;
+	private boolean loginStatus;
 	
 	
 	public Customer(String customerName, String customerEmail, String password) {
