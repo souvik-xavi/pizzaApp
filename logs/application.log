@@ -111,3 +111,913 @@
 2022-07-16 09:42:18.461  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-07-16 09:42:18.462  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.277 seconds (JVM running for 39218.449)
 2022-07-16 09:42:18.462  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:21.816  INFO 25783 --- [Thread-300] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:21.817  INFO 25783 --- [Thread-300] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:21.830  INFO 25783 --- [Thread-300] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Shutdown initiated...
+2022-07-16 09:47:21.831  INFO 25783 --- [Thread-300] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Shutdown completed.
+2022-07-16 09:47:22.029  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:22.029  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:22.066  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:22.069  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:22.084  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:22.084  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:22.084  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:22.088  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:22.088  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 58 ms
+2022-07-16 09:47:22.096  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:22.097  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Starting...
+2022-07-16 09:47:22.110  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Start completed.
+2022-07-16 09:47:22.110  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:22.118  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:22.121  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:22.121  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:22.121  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:22.121  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:22.121  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:22.121  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:22.122  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:22.122  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:22.122  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:22.122  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:22.151  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:22.151  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:22.178  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:22.188  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:22.189  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:22.190  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.297 seconds (JVM running for 39522.137)
+2022-07-16 09:47:22.190  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:24.622  INFO 25783 --- [Thread-304] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:24.622  INFO 25783 --- [Thread-304] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:24.631  INFO 25783 --- [Thread-304] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Shutdown initiated...
+2022-07-16 09:47:24.631  INFO 25783 --- [Thread-304] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Shutdown completed.
+2022-07-16 09:47:24.682  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:24.682  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:24.707  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:24.710  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:24.722  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:24.722  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:24.722  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:24.726  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:24.726  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 44 ms
+2022-07-16 09:47:24.731  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:24.732  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Starting...
+2022-07-16 09:47:24.742  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Start completed.
+2022-07-16 09:47:24.743  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:24.749  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:24.797  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:24.797  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:24.798  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:24.798  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:24.799  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:24.799  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:24.799  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:24.799  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:24.800  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:24.800  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:24.823  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:24.824  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:24.853  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:24.865  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:24.866  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:24.867  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.19 seconds (JVM running for 39524.814)
+2022-07-16 09:47:24.868  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:27.295  INFO 25783 --- [Thread-308] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:27.295  INFO 25783 --- [Thread-308] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:27.301  INFO 25783 --- [Thread-308] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Shutdown initiated...
+2022-07-16 09:47:27.302  INFO 25783 --- [Thread-308] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Shutdown completed.
+2022-07-16 09:47:27.342  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:27.342  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:27.370  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:27.373  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:27.385  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:27.385  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:27.385  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:27.388  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:27.388  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 46 ms
+2022-07-16 09:47:27.395  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:27.396  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Starting...
+2022-07-16 09:47:27.405  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Start completed.
+2022-07-16 09:47:27.406  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:27.411  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:27.417  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:27.417  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:27.417  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:27.417  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:27.417  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:27.418  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:27.418  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:27.418  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:27.418  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:27.418  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:27.433  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:27.433  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:27.460  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:27.471  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:27.475  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:27.476  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.139 seconds (JVM running for 39527.423)
+2022-07-16 09:47:27.476  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:30.916  INFO 25783 --- [Thread-312] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:30.917  INFO 25783 --- [Thread-312] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:30.929  INFO 25783 --- [Thread-312] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Shutdown initiated...
+2022-07-16 09:47:30.929  INFO 25783 --- [Thread-312] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Shutdown completed.
+2022-07-16 09:47:30.983  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:30.983  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:31.010  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:31.013  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:31.025  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:31.025  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:31.025  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:31.029  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:31.029  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 45 ms
+2022-07-16 09:47:31.034  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:31.035  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Starting...
+2022-07-16 09:47:31.045  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Start completed.
+2022-07-16 09:47:31.045  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:31.051  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:31.053  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:31.053  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:31.054  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:31.066  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:31.067  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:31.096  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:31.106  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:31.107  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:31.108  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.13 seconds (JVM running for 39531.055)
+2022-07-16 09:47:31.109  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:36.564  INFO 25783 --- [Thread-316] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:36.564  INFO 25783 --- [Thread-316] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:36.573  INFO 25783 --- [Thread-316] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Shutdown initiated...
+2022-07-16 09:47:36.573  INFO 25783 --- [Thread-316] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Shutdown completed.
+2022-07-16 09:47:36.628  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:36.629  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:36.653  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:36.656  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:36.669  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:36.669  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:36.669  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:36.672  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:36.672  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 43 ms
+2022-07-16 09:47:36.678  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:36.679  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Starting...
+2022-07-16 09:47:36.689  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Start completed.
+2022-07-16 09:47:36.689  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:36.696  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:36.698  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:36.698  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:36.698  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:36.698  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:36.699  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:36.699  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:36.699  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:36.699  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:36.699  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:36.699  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:36.714  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:36.714  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:36.743  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:36.754  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:36.755  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:36.756  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.134 seconds (JVM running for 39536.703)
+2022-07-16 09:47:36.756  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:40.196  INFO 25783 --- [Thread-320] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:40.196  INFO 25783 --- [Thread-320] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:40.206  INFO 25783 --- [Thread-320] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Shutdown initiated...
+2022-07-16 09:47:40.206  INFO 25783 --- [Thread-320] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Shutdown completed.
+2022-07-16 09:47:40.265  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:40.265  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:40.296  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:40.299  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:40.312  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:40.312  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:40.312  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:40.315  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:40.315  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 50 ms
+2022-07-16 09:47:40.321  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:40.321  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Starting...
+2022-07-16 09:47:40.332  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Start completed.
+2022-07-16 09:47:40.332  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:40.337  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:40.340  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:40.340  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:40.340  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:40.340  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:40.341  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:40.341  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:40.341  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:40.341  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:40.341  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:40.341  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:40.353  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:40.353  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:40.382  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:40.393  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:40.394  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:40.395  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.135 seconds (JVM running for 39540.342)
+2022-07-16 09:47:40.395  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:43.834  INFO 25783 --- [Thread-324] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:43.834  INFO 25783 --- [Thread-324] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:43.844  INFO 25783 --- [Thread-324] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Shutdown initiated...
+2022-07-16 09:47:43.844  INFO 25783 --- [Thread-324] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Shutdown completed.
+2022-07-16 09:47:43.903  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:43.903  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:43.929  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:43.932  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:43.945  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:43.946  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:43.946  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:43.949  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:43.949  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 45 ms
+2022-07-16 09:47:43.955  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:43.955  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-83 - Starting...
+2022-07-16 09:47:43.966  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-83 - Start completed.
+2022-07-16 09:47:43.966  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:43.972  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:43.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:43.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:43.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:43.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:43.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:43.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:43.977  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:43.977  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:43.977  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:43.977  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:43.994  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:43.994  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:44.022  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:44.033  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:44.035  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:44.036  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.139 seconds (JVM running for 39543.982)
+2022-07-16 09:47:44.036  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:46.465  INFO 25783 --- [Thread-328] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:46.465  INFO 25783 --- [Thread-328] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:46.474  INFO 25783 --- [Thread-328] com.zaxxer.hikari.HikariDataSource       : HikariPool-83 - Shutdown initiated...
+2022-07-16 09:47:46.475  INFO 25783 --- [Thread-328] com.zaxxer.hikari.HikariDataSource       : HikariPool-83 - Shutdown completed.
+2022-07-16 09:47:46.533  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:46.534  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:46.560  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:46.563  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:46.576  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:46.576  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:46.576  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:46.579  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:46.580  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 45 ms
+2022-07-16 09:47:46.585  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:46.586  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-84 - Starting...
+2022-07-16 09:47:46.596  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-84 - Start completed.
+2022-07-16 09:47:46.596  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:46.602  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:46.605  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:46.606  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:46.606  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:46.620  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:46.620  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:46.650  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:46.661  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:46.662  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:46.663  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.134 seconds (JVM running for 39546.61)
+2022-07-16 09:47:46.663  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:50.099  INFO 25783 --- [Thread-332] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:50.099  INFO 25783 --- [Thread-332] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:50.107  INFO 25783 --- [Thread-332] com.zaxxer.hikari.HikariDataSource       : HikariPool-84 - Shutdown initiated...
+2022-07-16 09:47:50.108  INFO 25783 --- [Thread-332] com.zaxxer.hikari.HikariDataSource       : HikariPool-84 - Shutdown completed.
+2022-07-16 09:47:50.162  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:50.162  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:50.192  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:50.194  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:50.206  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:50.207  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:50.207  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:50.210  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:50.210  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 47 ms
+2022-07-16 09:47:50.215  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:50.216  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-85 - Starting...
+2022-07-16 09:47:50.227  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-85 - Start completed.
+2022-07-16 09:47:50.227  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:50.233  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:50.235  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:50.235  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:50.235  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:50.235  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:50.236  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:50.236  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:50.236  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:50.236  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:50.236  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:50.236  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:50.256  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:50.257  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:50.285  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:50.297  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:50.298  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:50.299  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.143 seconds (JVM running for 39550.246)
+2022-07-16 09:47:50.300  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:53.736  INFO 25783 --- [Thread-336] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:53.736  INFO 25783 --- [Thread-336] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:53.744  INFO 25783 --- [Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-85 - Shutdown initiated...
+2022-07-16 09:47:53.744  INFO 25783 --- [Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-85 - Shutdown completed.
+2022-07-16 09:47:53.785  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:53.785  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:53.809  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:53.812  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:53.827  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:53.827  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:53.827  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:53.831  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:53.831  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 46 ms
+2022-07-16 09:47:53.837  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:53.838  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-86 - Starting...
+2022-07-16 09:47:53.850  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-86 - Start completed.
+2022-07-16 09:47:53.850  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:53.856  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:53.859  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:53.859  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:53.859  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:53.860  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:53.873  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:53.873  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:53.903  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:53.915  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:53.916  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:53.917  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.136 seconds (JVM running for 39553.864)
+2022-07-16 09:47:53.918  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:56.354  INFO 25783 --- [Thread-340] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:56.354  INFO 25783 --- [Thread-340] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:56.370  INFO 25783 --- [Thread-340] com.zaxxer.hikari.HikariDataSource       : HikariPool-86 - Shutdown initiated...
+2022-07-16 09:47:56.370  INFO 25783 --- [Thread-340] com.zaxxer.hikari.HikariDataSource       : HikariPool-86 - Shutdown completed.
+2022-07-16 09:47:56.418  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:56.418  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:56.442  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:56.444  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:56.457  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:56.457  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:56.457  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:56.461  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:56.461  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 42 ms
+2022-07-16 09:47:56.466  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:56.467  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-87 - Starting...
+2022-07-16 09:47:56.477  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-87 - Start completed.
+2022-07-16 09:47:56.478  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:56.483  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:56.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:56.486  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:56.508  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:56.508  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:56.537  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:56.548  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:56.550  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:56.551  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.137 seconds (JVM running for 39556.498)
+2022-07-16 09:47:56.551  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:47:58.977  INFO 25783 --- [Thread-344] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:58.977  INFO 25783 --- [Thread-344] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:47:58.987  INFO 25783 --- [Thread-344] com.zaxxer.hikari.HikariDataSource       : HikariPool-87 - Shutdown initiated...
+2022-07-16 09:47:58.987  INFO 25783 --- [Thread-344] com.zaxxer.hikari.HikariDataSource       : HikariPool-87 - Shutdown completed.
+2022-07-16 09:47:59.046  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:47:59.046  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:47:59.072  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:47:59.075  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:47:59.087  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:47:59.088  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:47:59.088  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:47:59.091  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:47:59.091  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 45 ms
+2022-07-16 09:47:59.097  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:47:59.098  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-88 - Starting...
+2022-07-16 09:47:59.108  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-88 - Start completed.
+2022-07-16 09:47:59.109  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:47:59.114  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:47:59.116  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:59.116  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:47:59.117  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:47:59.134  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:47:59.134  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:47:59.164  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:47:59.174  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:47:59.176  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:47:59.177  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.137 seconds (JVM running for 39559.124)
+2022-07-16 09:47:59.178  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:03.630  INFO 25783 --- [Thread-348] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:03.630  INFO 25783 --- [Thread-348] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:03.648  INFO 25783 --- [Thread-348] com.zaxxer.hikari.HikariDataSource       : HikariPool-88 - Shutdown initiated...
+2022-07-16 09:48:03.649  INFO 25783 --- [Thread-348] com.zaxxer.hikari.HikariDataSource       : HikariPool-88 - Shutdown completed.
+2022-07-16 09:48:03.697  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:03.697  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:03.719  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:03.722  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:03.734  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:03.734  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:03.734  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:03.737  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:03.737  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 40 ms
+2022-07-16 09:48:03.743  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:03.744  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-89 - Starting...
+2022-07-16 09:48:03.756  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-89 - Start completed.
+2022-07-16 09:48:03.756  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:03.761  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:03.764  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:03.764  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:03.764  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:03.764  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:03.764  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:03.764  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:03.765  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:03.765  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:03.765  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:03.765  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:03.779  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:03.779  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:03.810  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:03.821  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:03.823  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:03.824  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.132 seconds (JVM running for 39563.771)
+2022-07-16 09:48:03.824  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:06.252  INFO 25783 --- [Thread-352] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:06.252  INFO 25783 --- [Thread-352] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:06.262  INFO 25783 --- [Thread-352] com.zaxxer.hikari.HikariDataSource       : HikariPool-89 - Shutdown initiated...
+2022-07-16 09:48:06.263  INFO 25783 --- [Thread-352] com.zaxxer.hikari.HikariDataSource       : HikariPool-89 - Shutdown completed.
+2022-07-16 09:48:06.303  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:06.303  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:06.333  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:06.335  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:06.348  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:06.348  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:06.349  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:06.352  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:06.352  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 48 ms
+2022-07-16 09:48:06.357  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:06.358  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-90 - Starting...
+2022-07-16 09:48:06.368  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-90 - Start completed.
+2022-07-16 09:48:06.368  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:06.374  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:06.377  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:06.377  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:06.378  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:06.393  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:06.394  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:06.422  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:06.433  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:06.434  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:06.435  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.135 seconds (JVM running for 39566.382)
+2022-07-16 09:48:06.435  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:09.884  INFO 25783 --- [Thread-356] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:09.885  INFO 25783 --- [Thread-356] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:09.894  INFO 25783 --- [Thread-356] com.zaxxer.hikari.HikariDataSource       : HikariPool-90 - Shutdown initiated...
+2022-07-16 09:48:09.894  INFO 25783 --- [Thread-356] com.zaxxer.hikari.HikariDataSource       : HikariPool-90 - Shutdown completed.
+2022-07-16 09:48:09.953  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:09.953  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:09.979  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:09.982  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:09.995  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:09.995  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:09.995  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:09.998  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:09.998  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 44 ms
+2022-07-16 09:48:10.004  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:10.005  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-91 - Starting...
+2022-07-16 09:48:10.022  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-91 - Start completed.
+2022-07-16 09:48:10.022  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:10.028  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:10.031  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:10.045  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:10.045  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:10.074  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:10.085  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:10.086  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:10.087  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.14 seconds (JVM running for 39570.034)
+2022-07-16 09:48:10.087  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:13.526  INFO 25783 --- [Thread-360] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:13.527  INFO 25783 --- [Thread-360] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:13.535  INFO 25783 --- [Thread-360] com.zaxxer.hikari.HikariDataSource       : HikariPool-91 - Shutdown initiated...
+2022-07-16 09:48:13.535  INFO 25783 --- [Thread-360] com.zaxxer.hikari.HikariDataSource       : HikariPool-91 - Shutdown completed.
+2022-07-16 09:48:13.604  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:13.604  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:13.645  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:13.648  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:13.662  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:13.662  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:13.662  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:13.665  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:13.665  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 60 ms
+2022-07-16 09:48:13.670  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:13.671  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-92 - Starting...
+2022-07-16 09:48:13.683  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-92 - Start completed.
+2022-07-16 09:48:13.683  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:13.688  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:13.692  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:13.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:13.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:13.705  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:13.705  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:13.733  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:13.745  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:13.746  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:13.747  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.148 seconds (JVM running for 39573.694)
+2022-07-16 09:48:13.748  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:16.184  INFO 25783 --- [Thread-364] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:16.184  INFO 25783 --- [Thread-364] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:16.193  INFO 25783 --- [Thread-364] com.zaxxer.hikari.HikariDataSource       : HikariPool-92 - Shutdown initiated...
+2022-07-16 09:48:16.194  INFO 25783 --- [Thread-364] com.zaxxer.hikari.HikariDataSource       : HikariPool-92 - Shutdown completed.
+2022-07-16 09:48:16.297  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:16.297  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:16.323  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:16.326  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:16.339  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:16.339  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:16.339  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:16.343  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:16.343  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 46 ms
+2022-07-16 09:48:16.359  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:16.360  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-93 - Starting...
+2022-07-16 09:48:16.371  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-93 - Start completed.
+2022-07-16 09:48:16.371  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:16.377  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:16.379  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:16.380  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:16.396  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:16.396  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:16.426  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:16.437  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:16.438  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:16.439  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.173 seconds (JVM running for 39576.386)
+2022-07-16 09:48:16.439  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:18.872  INFO 25783 --- [Thread-368] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:18.873  INFO 25783 --- [Thread-368] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:18.881  INFO 25783 --- [Thread-368] com.zaxxer.hikari.HikariDataSource       : HikariPool-93 - Shutdown initiated...
+2022-07-16 09:48:18.881  INFO 25783 --- [Thread-368] com.zaxxer.hikari.HikariDataSource       : HikariPool-93 - Shutdown completed.
+2022-07-16 09:48:18.935  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:18.935  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:18.961  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:18.963  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:18.975  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:18.976  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:18.976  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:18.979  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:18.979  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 43 ms
+2022-07-16 09:48:18.984  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:18.985  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-94 - Starting...
+2022-07-16 09:48:18.995  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-94 - Start completed.
+2022-07-16 09:48:18.995  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:19.000  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:19.003  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:19.003  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:19.003  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:19.003  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:19.003  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:19.003  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:19.004  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:19.004  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:19.004  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:19.004  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:19.017  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:19.017  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:19.048  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:19.060  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:19.061  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:19.062  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.131 seconds (JVM running for 39579.009)
+2022-07-16 09:48:19.062  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:22.506  INFO 25783 --- [Thread-372] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:22.507  INFO 25783 --- [Thread-372] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:22.516  INFO 25783 --- [Thread-372] com.zaxxer.hikari.HikariDataSource       : HikariPool-94 - Shutdown initiated...
+2022-07-16 09:48:22.517  INFO 25783 --- [Thread-372] com.zaxxer.hikari.HikariDataSource       : HikariPool-94 - Shutdown completed.
+2022-07-16 09:48:22.558  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:22.558  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:22.585  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:22.588  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:22.601  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:22.601  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:22.601  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:22.605  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:22.605  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 47 ms
+2022-07-16 09:48:22.611  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:22.612  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-95 - Starting...
+2022-07-16 09:48:22.623  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-95 - Start completed.
+2022-07-16 09:48:22.623  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:22.629  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:22.632  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:22.645  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:22.645  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:22.673  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:22.683  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:22.684  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:22.685  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.132 seconds (JVM running for 39582.632)
+2022-07-16 09:48:22.685  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:25.108  INFO 25783 --- [Thread-376] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:25.108  INFO 25783 --- [Thread-376] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:25.117  INFO 25783 --- [Thread-376] com.zaxxer.hikari.HikariDataSource       : HikariPool-95 - Shutdown initiated...
+2022-07-16 09:48:25.118  INFO 25783 --- [Thread-376] com.zaxxer.hikari.HikariDataSource       : HikariPool-95 - Shutdown completed.
+2022-07-16 09:48:25.162  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:25.162  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:25.184  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:25.186  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:25.200  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:25.200  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:25.200  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:25.203  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:25.203  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 41 ms
+2022-07-16 09:48:25.209  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:25.210  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-96 - Starting...
+2022-07-16 09:48:25.220  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-96 - Start completed.
+2022-07-16 09:48:25.220  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:25.227  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:25.230  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:25.230  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:25.230  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:25.230  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:25.230  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:25.230  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:25.231  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:25.231  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:25.231  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:25.231  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:25.244  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:25.244  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:25.273  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:25.283  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:25.284  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:25.285  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.127 seconds (JVM running for 39585.232)
+2022-07-16 09:48:25.285  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:27.713  INFO 25783 --- [Thread-380] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:27.714  INFO 25783 --- [Thread-380] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:27.726  INFO 25783 --- [Thread-380] com.zaxxer.hikari.HikariDataSource       : HikariPool-96 - Shutdown initiated...
+2022-07-16 09:48:27.726  INFO 25783 --- [Thread-380] com.zaxxer.hikari.HikariDataSource       : HikariPool-96 - Shutdown completed.
+2022-07-16 09:48:27.768  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:27.769  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:27.794  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:27.797  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:27.809  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:27.809  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:27.809  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:27.812  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:27.812  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 43 ms
+2022-07-16 09:48:27.817  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:27.818  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-97 - Starting...
+2022-07-16 09:48:27.830  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-97 - Start completed.
+2022-07-16 09:48:27.830  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:27.839  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:27.861  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:27.861  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:27.862  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:27.862  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:27.862  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:27.862  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:27.863  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:27.863  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:27.863  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:27.863  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:27.877  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:27.877  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:27.908  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:27.920  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:27.923  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:27.924  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.16 seconds (JVM running for 39587.871)
+2022-07-16 09:48:27.924  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:31.361  INFO 25783 --- [Thread-384] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:31.361  INFO 25783 --- [Thread-384] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:31.372  INFO 25783 --- [Thread-384] com.zaxxer.hikari.HikariDataSource       : HikariPool-97 - Shutdown initiated...
+2022-07-16 09:48:31.372  INFO 25783 --- [Thread-384] com.zaxxer.hikari.HikariDataSource       : HikariPool-97 - Shutdown completed.
+2022-07-16 09:48:31.413  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:31.413  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:31.441  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:31.444  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:31.455  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:31.456  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:31.456  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:31.459  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:31.459  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 45 ms
+2022-07-16 09:48:31.465  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:31.466  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-98 - Starting...
+2022-07-16 09:48:31.476  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-98 - Start completed.
+2022-07-16 09:48:31.476  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:31.482  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:31.484  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:31.484  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:31.484  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:31.484  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:31.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:31.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:31.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:31.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:31.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:31.485  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:31.501  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:31.501  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:31.532  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:31.542  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:31.544  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:31.545  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.135 seconds (JVM running for 39591.492)
+2022-07-16 09:48:31.545  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:33.975  INFO 25783 --- [Thread-388] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:33.976  INFO 25783 --- [Thread-388] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:33.983  INFO 25783 --- [Thread-388] com.zaxxer.hikari.HikariDataSource       : HikariPool-98 - Shutdown initiated...
+2022-07-16 09:48:33.984  INFO 25783 --- [Thread-388] com.zaxxer.hikari.HikariDataSource       : HikariPool-98 - Shutdown completed.
+2022-07-16 09:48:34.028  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:34.028  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:34.051  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:34.054  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:34.066  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:34.066  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:34.066  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:34.069  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:34.069  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 40 ms
+2022-07-16 09:48:34.075  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:34.076  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-99 - Starting...
+2022-07-16 09:48:34.086  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-99 - Start completed.
+2022-07-16 09:48:34.086  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:34.092  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:34.094  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:34.094  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:34.094  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:34.094  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:34.095  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:34.095  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:34.095  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:34.095  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:34.095  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:34.095  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:34.109  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:34.109  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:34.136  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:34.147  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:34.148  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:34.149  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.126 seconds (JVM running for 39594.096)
+2022-07-16 09:48:34.149  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:36.575  INFO 25783 --- [Thread-392] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:36.576  INFO 25783 --- [Thread-392] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:36.583  INFO 25783 --- [Thread-392] com.zaxxer.hikari.HikariDataSource       : HikariPool-99 - Shutdown initiated...
+2022-07-16 09:48:36.583  INFO 25783 --- [Thread-392] com.zaxxer.hikari.HikariDataSource       : HikariPool-99 - Shutdown completed.
+2022-07-16 09:48:36.625  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:36.625  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:36.647  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:36.650  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:36.662  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:36.663  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:36.663  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:36.665  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:36.665  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 39 ms
+2022-07-16 09:48:36.671  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:36.672  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-100 - Starting...
+2022-07-16 09:48:36.684  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-100 - Start completed.
+2022-07-16 09:48:36.684  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:36.690  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:36.693  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:36.707  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:36.707  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:36.738  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:36.751  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:36.752  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:36.754  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.132 seconds (JVM running for 39596.701)
+2022-07-16 09:48:36.754  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:39.186  INFO 25783 --- [Thread-396] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:39.186  INFO 25783 --- [Thread-396] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:39.195  INFO 25783 --- [Thread-396] com.zaxxer.hikari.HikariDataSource       : HikariPool-100 - Shutdown initiated...
+2022-07-16 09:48:39.196  INFO 25783 --- [Thread-396] com.zaxxer.hikari.HikariDataSource       : HikariPool-100 - Shutdown completed.
+2022-07-16 09:48:39.249  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:39.249  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:39.278  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:39.281  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:39.293  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:39.294  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:39.294  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:39.297  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:39.297  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 48 ms
+2022-07-16 09:48:39.302  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:39.303  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-101 - Starting...
+2022-07-16 09:48:39.314  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-101 - Start completed.
+2022-07-16 09:48:39.314  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:39.320  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:39.323  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:39.323  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:39.323  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:39.323  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:39.324  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:39.324  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:39.324  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:39.324  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:39.324  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:39.324  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:39.336  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:39.336  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:39.382  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:39.395  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:39.397  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:39.398  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.154 seconds (JVM running for 39599.345)
+2022-07-16 09:48:39.399  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-16 09:48:42.838  INFO 25783 --- [Thread-400] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:42.839  INFO 25783 --- [Thread-400] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-16 09:48:42.851  INFO 25783 --- [Thread-400] com.zaxxer.hikari.HikariDataSource       : HikariPool-101 - Shutdown initiated...
+2022-07-16 09:48:42.851  INFO 25783 --- [Thread-400] com.zaxxer.hikari.HikariDataSource       : HikariPool-101 - Shutdown completed.
+2022-07-16 09:48:42.907  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 18.0.1 on souviks-MacBook-Pro.local with PID 25783 (/Users/souvikghata/Downloads/pizzaApp/target/classes started by souvikghata in /Users/souvikghata/Downloads/pizzaApp)
+2022-07-16 09:48:42.907  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-16 09:48:42.932  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-16 09:48:42.934  INFO 25783 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 4 JPA repository interfaces.
+2022-07-16 09:48:42.946  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-16 09:48:42.947  INFO 25783 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-16 09:48:42.947  INFO 25783 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-16 09:48:42.950  INFO 25783 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-07-16 09:48:42.950  INFO 25783 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 42 ms
+2022-07-16 09:48:42.955  INFO 25783 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-16 09:48:42.956  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-102 - Starting...
+2022-07-16 09:48:42.967  INFO 25783 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-102 - Start completed.
+2022-07-16 09:48:42.967  INFO 25783 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-16 09:48:42.973  INFO 25783 --- [restartedMain] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.pizzaApp.Entity.Coupan (class must be instantiated by Interceptor)
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "coupan" does not exist, skipping
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "customer" does not exist, skipping
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza" does not exist, skipping
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "pizza_order" does not exist, skipping
+2022-07-16 09:48:42.976  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2022-07-16 09:48:42.977  WARN 25783 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "user_sequence" does not exist, skipping
+2022-07-16 09:48:42.995  INFO 25783 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-16 09:48:42.995  INFO 25783 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-16 09:48:43.022  WARN 25783 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-16 09:48:43.033  INFO 25783 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-16 09:48:43.034  INFO 25783 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-16 09:48:43.035  INFO 25783 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.133 seconds (JVM running for 39602.982)
+2022-07-16 09:48:43.035  INFO 25783 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
