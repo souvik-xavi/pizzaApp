@@ -26,16 +26,16 @@ public class PizzaOrderServices {
 	@Autowired
 	CouponRepository couponRepository;
 	public boolean bookPizzaOrder(PizzaOrder pizzaOrder, int customerId, int pizzaid) {
-		if(customerRepository.findById(customerId).isEmpty()){
+		System.out.println(pizzaOrder.getCouponId());
+		if(!customerRepository.findById(customerId).isPresent()){
 			throw new ResourceNotFoundException("User not found ");
 		}
-		if(pizzaRepository.findById(pizzaid).isEmpty()){
+		if(!pizzaRepository.findById(pizzaid).isPresent()){
 			throw new ResourceNotFoundException("User not found ");
 		}
 		pizzaOrder.setCustomerId(customerId);
 		pizzaOrder.setPizzaName(pizzaRepository.findById(pizzaid).get().getPizzaName());
-
-		Coupan c=couponRepository.findById(pizzaOrder.getCoupan()).get();
+		Coupan c=couponRepository.findById(pizzaOrder.getCouponId()).get();
 
 		if(c==null){
 			throw new ResourceNotFoundException("Coupon not found");
@@ -44,7 +44,7 @@ public class PizzaOrderServices {
 		if(c.getCouponValue()<pizzaOrder.getTotalCost()){
 			throw new ResourceNotFoundException("Coupon undervalued");
 
-		}
+	}
 
 		pizzaOrderRepository.save(pizzaOrder);
 		return true;

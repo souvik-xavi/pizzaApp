@@ -22,68 +22,30 @@ public class PizzaOrder {
 	           strategy = GenerationType.SEQUENCE,
 	           generator = "user_sequence"
 	   )
-	private int bookingOrderId;
-	private LocalDate dateOfOrder;
-	private String transactionMode;
+	private int pizzaOrderId;
 	private int quantity;
-	private String size;//medium,regular,large
+	private String size;
 	private double totalCost;
-	private int orderId;
-	private int coupan;
-	private double pizzaCostAfterCoupan;
-	private String pizzaName;
+	private int couponId;
 	private int customerId;
+	private  String pizzaName;
 	public int getCustomerId() {
 		return customerId;
 	}
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
-	public int getBookingOrderId() {
-		return bookingOrderId;
+	public String getPizzaName() {
+		return pizzaName;
 	}
-	public int getOrderId() {
-		return orderId;
+	public void setPizzaName(String pizzaName) {
+		this.pizzaName = pizzaName;
 	}
-	public PizzaOrder(int bookingOrderId, LocalDate dateOfOrder, String transactionMode, int quantity, String size,
-			double totalCost, int orderId, int coupan, double pizzaCostAfterCoupan) {
-		this.bookingOrderId = bookingOrderId;
-		this.dateOfOrder = dateOfOrder;
-		this.transactionMode = transactionMode;
-		this.quantity = quantity;
-		this.size = size;
-		this.totalCost = totalCost;
-		this.orderId = orderId;
-		this.coupan = coupan;
-		this.pizzaCostAfterCoupan = pizzaCostAfterCoupan;
+	public int getPizzaOrderId() {
+		return pizzaOrderId;
 	}
-	public PizzaOrder() {
-	}
-	public PizzaOrder(LocalDate dateOfOrder, int quantity, String size, double totalCost,
-			int coupan) {
-		this.dateOfOrder = dateOfOrder;
-		this.quantity = quantity;
-		this.size = size;
-		this.totalCost = totalCost;
-		this.coupan = coupan;
-	}
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
-	}
-	public void setBookingOrderId(int bookingOrderId) {
-		this.bookingOrderId = bookingOrderId;
-	}
-	public LocalDate getDateOfOrder() {
-		return dateOfOrder;
-	}
-	public void setDateOfOrder(LocalDate dateOfOrder) {
-		this.dateOfOrder = dateOfOrder;
-	}
-	public String getTransactionMode() {
-		return transactionMode;
-	}
-	public void setTransactionMode(String transactionMode) {
-		this.transactionMode = transactionMode;
+	public void setPizzaOrderId(int pizzaOrderId) {
+		this.pizzaOrderId = pizzaOrderId;
 	}
 	public int getQuantity() {
 		return quantity;
@@ -103,32 +65,30 @@ public class PizzaOrder {
 	public void setTotalCost(double totalCost) {
 		this.totalCost = totalCost;
 	}
-
-	public int getorderId() {
-		return orderId;
+	public int getCouponId() {
+		return couponId;
 	}
-	public void setOrder(int orderId) {
-		this.orderId = orderId;
+	public void setCouponId(int couponId) {
+		this.couponId = couponId;
 	}
-	public int getCoupan() {
-		return coupan;
+	public PizzaOrder(int pizzaOrderId, int quantity, String size, double totalCost, int couponId) {
+		super();
+		this.pizzaOrderId = pizzaOrderId;
+		this.quantity = quantity;
+		this.size = size;
+		this.totalCost = totalCost;
+		this.couponId = couponId;
 	}
-	public void setCoupan(int coupan) {
-		this.coupan = coupan;
-	} 
-	public double getPizzaCostAfterCoupan() {
-		return pizzaCostAfterCoupan;
+	public PizzaOrder(int quantity, String size, double totalCost, int couponId) {
+		super();
+		this.quantity = quantity;
+		this.size = size;
+		this.totalCost = totalCost;
+		this.couponId = couponId;
 	}
-	public void setPizzaCostAfterCoupan(double pizzaCostAfterCoupan) {
-		this.pizzaCostAfterCoupan = pizzaCostAfterCoupan;
-	}
-	public String getPizzaName() {
-		return pizzaName;
-	}
-	public void setPizzaName(String pizzaName) {
-		this.pizzaName = pizzaName;
+	public PizzaOrder() {
+		super();
 	}
 	
-
 
 }

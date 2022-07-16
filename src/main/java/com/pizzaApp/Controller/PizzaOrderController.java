@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.pizzaApp.Entity.Pizza;
 import com.pizzaApp.Entity.PizzaOrder;
 import com.pizzaApp.Services.PizzaOrderServices;
 
@@ -16,20 +17,24 @@ import com.pizzaApp.Services.PizzaOrderServices;
 public class PizzaOrderController {
 	@Autowired
 	PizzaOrderServices pizzaorderservices;
-
-	@PostMapping("/addPizzaOrder/{customerId}/{pizzaid}")
-	public ResponseEntity bookPizzaOrder(@RequestBody PizzaOrder pizzaOrder, @PathVariable int customerId,
-			@PathVariable int pizzaid) {
-		pizzaorderservices.bookPizzaOrder(pizzaOrder,customerId,pizzaid);
-		return ResponseEntity.status(HttpStatus.OK).body("Pizza Deleted");
+	@PostMapping("/bookPizzaOrder/{customerId}/{pizzaId}/{couponId}")
+	public ResponseEntity bookPizzaOrder(@RequestBody PizzaOrder pizzaOrder,@PathVariable int customerId, @PathVariable int pizzaId, @PathVariable int couponId) 
+	{
+		pizzaOrder.setCouponId(couponId);
+		System.out.println(pizzaOrder);
+		System.out.println(customerId);
+		System.out.println(pizzaId);
+		System.out.println(couponId);
+		pizzaorderservices.bookPizzaOrder(pizzaOrder, customerId, pizzaId);
+        return ResponseEntity.status(HttpStatus.FOUND).body("Pizza Ordered");
 	}
 
-	@GetMapping("/addPizzaOrder/{customerId}/")
+	@GetMapping("/viewPizzaOrder/{customerId}/")
 	public ResponseEntity viewCustomerOrder( @PathVariable int customerId) {
 		return ResponseEntity.status(HttpStatus.OK).body(pizzaorderservices.FindPizzaByCustomerId(customerId));
 	}
 
-	@GetMapping("/addPizzaOrder/admin/{customerId}/")
+	@GetMapping("/viewOrder/admin/{customerId}/")
 	public ResponseEntity viewAdminOrder( @PathVariable int customerId) {
 		return ResponseEntity.status(HttpStatus.OK).body(pizzaorderservices.FindPizzaOrder(customerId));
 	}

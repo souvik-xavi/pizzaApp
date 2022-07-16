@@ -38,7 +38,7 @@ public class PizzaController {
 		return ResponseEntity.status(HttpStatus.OK).body("Pizza Deleted");
 		
 	}
-	@PutMapping("/updatePizza//{customerId}")
+	@PutMapping("/updatePizza/{customerId}")
 	public ResponseEntity updatePizza(@RequestBody Pizza pizza,@PathVariable int customerId) 
 	{		
         pizzaservices.updatePizza(pizza,customerId);
