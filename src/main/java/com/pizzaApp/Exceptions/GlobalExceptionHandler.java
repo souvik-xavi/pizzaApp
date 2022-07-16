@@ -29,7 +29,7 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(NotAdminException.class)
-	public ResponseEntity<?> NotAdminHandling(ResourceAlreadyExistException exception, WebRequest request){
+	public ResponseEntity<?> notAdminHandling(NotAdminException exception, WebRequest request){
 		ErrorDetails errorDetails = 
 				new ErrorDetails(new Date(), exception.getMessage());
 		return new ResponseEntity<>(errorDetails, HttpStatus.LOCKED);
