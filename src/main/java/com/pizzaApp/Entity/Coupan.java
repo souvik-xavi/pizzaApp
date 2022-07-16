@@ -21,9 +21,42 @@ public class Coupan {
 	   )
 	private int coupanId;
 	private String coupanName;
+
 	private String coupanType;
 	private String coupanDescription;
-	private int coupanPizzaId;
+	private Double couponValue;
+	public Coupan(String coupanName, String coupanType, String coupanDescription, Double couponValue) {
+		this.coupanName = coupanName;
+		this.coupanType = coupanType;
+		this.coupanDescription = coupanDescription;
+		this.couponValue = couponValue;
+	}
+
+	public Coupan(int coupanId, String coupanName, String coupanType, Double couponValue) {
+		this.coupanId = coupanId;
+		this.coupanName = coupanName;
+		this.coupanType = coupanType;
+		this.couponValue = couponValue;
+	}
+
+
+	
+
+	public Coupan(int coupanId, String coupanName, String coupanType, String coupanDescription, Double couponValue) {
+		this.coupanId = coupanId;
+		this.coupanName = coupanName;
+		this.coupanType = coupanType;
+		this.coupanDescription = coupanDescription;
+		this.couponValue = couponValue;
+	}
+
+	public Double getCouponValue() {
+		return couponValue;
+	}
+
+	public void setCouponValue(Double couponValue) {
+		this.couponValue = couponValue;
+	}
 
 	public int getCoupanId() {
 		return coupanId;
@@ -57,13 +90,7 @@ public class Coupan {
 		this.coupanDescription = coupanDescription;
 	}
 
-	public int getCoupanPizzaId() {
-		return coupanPizzaId;
-	}
-
-	public void setCoupanPizzaId(int coupanPizzaId) {
-		this.coupanPizzaId = coupanPizzaId;
-	}
+	
 
 
 

@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.pizzaApp.Entity.Coupan;
 import com.pizzaApp.Entity.Customer;
 import com.pizzaApp.Entity.PizzaOrder;
 import com.pizzaApp.Exceptions.NotAdminException;
 import com.pizzaApp.Exceptions.ResourceNotFoundException;
+import com.pizzaApp.Repository.CouponRepository;
 import com.pizzaApp.Repository.CustomerRepository;
 import com.pizzaApp.Repository.PizzaOrderRepository;
 import com.pizzaApp.Repository.PizzaRepository;
@@ -21,6 +23,8 @@ public class PizzaOrderServices {
 	CustomerRepository customerRepository;
 	@Autowired
 	PizzaRepository pizzaRepository;
+	@Autowired
+	CouponRepository couponRepository;
 	public boolean bookPizzaOrder(PizzaOrder pizzaOrder, int customerId, int pizzaid) {
 		if(customerRepository.findById(customerId).isEmpty()){
 			throw new ResourceNotFoundException("User not found ");
@@ -30,6 +34,18 @@ public class PizzaOrderServices {
 		}
 		pizzaOrder.setCustomerId(customerId);
 		pizzaOrder.setPizzaName(pizzaRepository.findById(pizzaid).get().getPizzaName());
+
+		Coupan c=couponRepository.findById(pizzaOrder.getCoupan()).get();
+
+		if(c==null){
+			throw new ResourceNotFoundException("Coupon not found");
+		}
+
+		if(c.getCouponValue()<pizzaOrder.getTotalCost()){
+			throw new ResourceNotFoundException("Coupon undervalued");
+
+		}
+
 		pizzaOrderRepository.save(pizzaOrder);
 		return true;
 	}
