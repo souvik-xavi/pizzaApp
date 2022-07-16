@@ -20,10 +20,10 @@ import com.pizzaApp.Services.PizzaServices;
 public class PizzaController {
 	@Autowired
 	PizzaServices pizzaservices;
-	@PostMapping("/addPizza")
-	public ResponseEntity addPizza(@RequestBody Pizza pizza) 
+	@PostMapping("/addPizza/{customerId}")
+	public ResponseEntity addPizza(@RequestBody Pizza pizza,@PathVariable int customerId) 
 	{		
-        if(pizzaservices.add(pizza))
+        if(pizzaservices.add(pizza,customerId))
         {
             return ResponseEntity.status(HttpStatus.OK).body(pizza);
 
@@ -31,17 +31,17 @@ public class PizzaController {
 
         	return ResponseEntity.status(HttpStatus.FOUND).body("pizza already exist");
 		}
-	@DeleteMapping("/delPizza/{id}")
-	public ResponseEntity deletePizza(@PathVariable int id) 
+	@DeleteMapping("/delPizza/{id}/{customerId}")
+	public ResponseEntity deletePizza(@PathVariable int id,@PathVariable int customerId) 
 	{
-		pizzaservices.deletePizza(id);
+		pizzaservices.deletePizza(id,customerId);
 		return ResponseEntity.status(HttpStatus.OK).body("Pizza Deleted");
 		
 	}
-	@PutMapping("/updatePizza")
-	public ResponseEntity updatePizza(@RequestBody Pizza pizza) 
+	@PutMapping("/updatePizza//{customerId}")
+	public ResponseEntity updatePizza(@RequestBody Pizza pizza,@PathVariable int customerId) 
 	{		
-        pizzaservices.updatePizza(pizza);
+        pizzaservices.updatePizza(pizza,customerId);
         return ResponseEntity.status(HttpStatus.FOUND).body("Pizza Updated");
 	}
 	@GetMapping("/viewPizza")
