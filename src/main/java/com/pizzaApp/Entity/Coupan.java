@@ -25,6 +25,10 @@ public class Coupan {
 	private String coupanType;
 	private String coupanDescription;
 	private Double couponValue;
+	
+	public Coupan() {
+	}
+
 	public Coupan(String coupanName, String coupanType, String coupanDescription, Double couponValue) {
 		this.coupanName = coupanName;
 		this.coupanType = coupanType;
@@ -32,8 +36,7 @@ public class Coupan {
 		this.couponValue = couponValue;
 	}
 
-	public Coupan(int coupanId, String coupanName, String coupanType, Double couponValue) {
-		this.coupanId = coupanId;
+	public Coupan(String coupanName, String coupanType, Double couponValue) {
 		this.coupanName = coupanName;
 		this.coupanType = coupanType;
 		this.couponValue = couponValue;

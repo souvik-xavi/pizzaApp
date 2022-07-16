@@ -20,11 +20,10 @@ public class CouponService {
 	CustomerRepository customerRepository;
 
     public boolean addCoupon(Coupan coupan, int customerId){
+        System.out.print(customerRepository.findById(customerId));
         Customer cust = customerRepository.findById(customerId).get();
-        if(cust==null){
-            throw new ResourceNotFoundException("User not found ");
-        }
-        else if (cust.gettype().equals("user")) {
+        System.out.print(cust);
+        if (cust.gettype().equals("user")) {
             throw new NotAdminException("Access Denied");
         }else{
 
