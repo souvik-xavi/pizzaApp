@@ -29,12 +29,12 @@ public class PizzaOrderController {
         return ResponseEntity.status(HttpStatus.FOUND).body("Pizza Ordered");
 	}
 
-	@GetMapping("/viewPizzaOrder/{customerId}/")
+	@GetMapping("/viewPizzaOrder/{customerId}")
 	public ResponseEntity viewCustomerOrder( @PathVariable int customerId) {
 		return ResponseEntity.status(HttpStatus.OK).body(pizzaorderservices.viewPizzaOrder(customerId));
 	}
 
-	@GetMapping("/viewOrder/admin/{customerId}/")
+	@GetMapping("/viewOrder/admin/{customerId}")
 	public ResponseEntity viewAdminOrder( @PathVariable int customerId) {
 		return ResponseEntity.status(HttpStatus.OK).body(pizzaorderservices.viewOrder(customerId));
 	}

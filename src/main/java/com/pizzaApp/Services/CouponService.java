@@ -36,4 +36,14 @@ public class CouponService {
         List<Coupan> coupans = couponRepository.findAll();
         return coupans;
     }
+    
+    public void deleteCoupan(int coupanId) {
+		Coupan cp = couponRepository.findById(coupanId).get();
+		if (cp == null) {
+			throw new ResourceNotFoundException("Coupan not found ");
+		
+		} else  {
+			couponRepository.deleteById(coupanId);
+		}
+	}
 }
