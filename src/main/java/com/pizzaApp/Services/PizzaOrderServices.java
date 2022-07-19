@@ -44,17 +44,19 @@ public class PizzaOrderServices {
 		if(c.getCouponValue()<pizzaOrder.getTotalCost()){
 			throw new ResourceNotFoundException("Coupon undervalued");
 
-	}
+		}
 
 		pizzaOrderRepository.save(pizzaOrder);
 		return true;
 	}
-    public List FindPizzaByCustomerId(int customerId) {
+	
+    public List viewPizzaOrder(int customerId) {
 		return pizzaOrderRepository.findByCustomerId(customerId);
 		
 
     }
-	public List FindPizzaOrder(int customerId) {
+    
+	public List viewOrder(int customerId) {
 		Customer cust = customerRepository.findById(customerId).get();
 		if(cust==null){
 			throw new ResourceNotFoundException("User not found ");
