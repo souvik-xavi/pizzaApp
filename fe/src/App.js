@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route,Routes,Link } from "react-router-dom";
 import Login from './components/Login';
 import Register from './components/Register';
+import Pizza from './components/Pizza';
 function App() {
   return (
     <Router>
@@ -12,6 +13,7 @@ function App() {
       <Routes>
       <Route path="/login" element={<Login/>} />
       <Route path="/register" element={<Register/>} />
+      <Route path="/viewpizza" element={<Pizza/>}/>
       </Routes>
     </Router>
   );
