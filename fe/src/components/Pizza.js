@@ -5,6 +5,7 @@ import './pizza.css';
 const Pizza = () => {
     const [pizzas, setPizzas] = useState([]);
 
+<<<<<<< HEAD
     const viewPizza = async (e) => {
       const res = await fetch(`http://localhost:8080/viewPizza`, {
         method: "GET",
@@ -23,6 +24,14 @@ const Pizza = () => {
         setPizzas(data);
         // window.alert("Data Fetch Successfully");
         console.log("1" + pizzas)
+=======
+    const viewPizza = async ()=>{
+      try {
+        const res = await axios.get(`http://localhost:8080/viewPizza`);
+        console.log(res.data);
+      } catch (error) {
+        console.log("Error Found")
+>>>>>>> b7f465d3aad04d737296c0889b44c09a62f1497f
       }
       
      
