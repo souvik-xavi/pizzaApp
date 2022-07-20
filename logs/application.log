@@ -3152,3 +3152,7 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 2022-07-20 14:33:34.909  INFO 12432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-07-20 14:33:34.909  INFO 12432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-07-20 14:33:34.986  WARN 12432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-20 14:33:35.035  INFO 12432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-20 14:33:35.040  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-20 14:33:35.043  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.433 seconds (JVM running for 5875.369)
+2022-07-20 14:33:35.043  INFO 12432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
