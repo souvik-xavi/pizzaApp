@@ -47,6 +47,6 @@ public class CustomerController {
     public ResponseEntity login(@RequestBody User customer) 
     		{
                 
-        return ResponseEntity.status(HttpStatus.FOUND).body(loginservices.login(customer));
+        return ResponseEntity.status(HttpStatus.OK).body(loginservices.login(customer));
     }
 }
