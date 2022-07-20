@@ -3133,3 +3133,22 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 2022-07-20 14:31:02.276  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-07-20 14:31:02.288  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 1.149 seconds (JVM running for 5722.614)
 2022-07-20 14:31:02.294  INFO 12432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-20 14:33:34.461  INFO 12432 --- [Thread-72] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 14:33:34.463  INFO 12432 --- [Thread-72] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2022-07-20 14:33:34.469  INFO 12432 --- [Thread-72] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2022-07-20 14:33:34.629  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 1.8.0_202 on LAPTOP-BK386SOI with PID 12432 (C:\Users\Sauptik\git\pizzaApp\target\classes started by Sauptik in C:\Users\Sauptik\git\pizzaApp)
+2022-07-20 14:33:34.629  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-20 14:33:34.736  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-20 14:33:34.747  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2022-07-20 14:33:34.810  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-20 14:33:34.810  INFO 12432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-20 14:33:34.810  INFO 12432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-20 14:33:34.819  INFO 12432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-20 14:33:34.819  INFO 12432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2022-07-20 14:33:34.837  INFO 12432 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-20 14:33:34.841  INFO 12432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2022-07-20 14:33:34.873  INFO 12432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2022-07-20 14:33:34.874  INFO 12432 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-20 14:33:34.909  INFO 12432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-20 14:33:34.909  INFO 12432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 14:33:34.986  WARN 12432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
