@@ -3110,3 +3110,26 @@ Caused by: org.postgresql.util.PSQLException: FATAL: password authentication fai
 2022-07-20 14:29:58.537  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-07-20 14:29:58.540  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 0.579 seconds (JVM running for 5658.866)
 2022-07-20 14:29:58.540  INFO 12432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-20 14:31:00.955  INFO 12432 --- [Thread-68] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 14:31:00.957  INFO 12432 --- [Thread-68] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2022-07-20 14:31:00.965  INFO 12432 --- [Thread-68] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2022-07-20 14:31:01.177  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Starting PizzaAppApplication using Java 1.8.0_202 on LAPTOP-BK386SOI with PID 12432 (C:\Users\Sauptik\git\pizzaApp\target\classes started by Sauptik in C:\Users\Sauptik\git\pizzaApp)
+2022-07-20 14:31:01.178  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-07-20 14:31:01.387  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-20 14:31:01.411  INFO 12432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2022-07-20 14:31:01.611  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-20 14:31:01.612  INFO 12432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-20 14:31:01.612  INFO 12432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-20 14:31:01.630  INFO 12432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-20 14:31:01.630  INFO 12432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 450 ms
+2022-07-20 14:31:01.676  INFO 12432 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-20 14:31:01.682  INFO 12432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2022-07-20 14:31:01.749  INFO 12432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2022-07-20 14:31:01.750  INFO 12432 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-07-20 14:31:01.838  INFO 12432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-20 14:31:01.839  INFO 12432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 14:31:02.020  WARN 12432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-20 14:31:02.258  INFO 12432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-20 14:31:02.276  INFO 12432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-20 14:31:02.288  INFO 12432 --- [restartedMain] com.pizzaApp.PizzaAppApplication         : Started PizzaAppApplication in 1.149 seconds (JVM running for 5722.614)
+2022-07-20 14:31:02.294  INFO 12432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
