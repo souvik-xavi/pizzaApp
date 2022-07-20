@@ -5,6 +5,8 @@ import { FiLock } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate,useLocation,Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+
+
 import 'react-toastify/dist/ReactToastify.css';
 import "./Form.css";
 
@@ -36,6 +38,7 @@ export default function Form() {
   };
 
   // Handling the form submission
+  var obj;
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (email === "" || password === "") {
@@ -52,6 +55,33 @@ export default function Form() {
     } else {
       setSubmitted(true);
       setError(false);
+      obj={"userEmail":email,
+      "userPassword":password}
+      try {
+        const response = await axios.post(`http://localhost:8080/login`,{...obj});
+        console.log(response.data);
+        toast.dark("Login Successful", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        
+      } catch (error) {
+        console.log(error.response.data.message);
+        toast.dark(error.response.data.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
     }
   };
 

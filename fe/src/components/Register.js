@@ -1,3 +1,4 @@
+import axios from 'axios';
 import "./Form.css";
 import { useState } from "react";
 import { FaUserCircle, FaEnvelope, } from "react-icons/fa";//MdOutlineDriveFileRenameOutline
@@ -42,18 +43,51 @@ export default function Form() {
     setRole(e.target.value);
     setSubmitted(false);
   };
-
+  var obj
   // Handling the form submission
   const handleSubmit = async(e) => {
     e.preventDefault();
     if (name === "" || email === "" || password === "") {
       setError(true);
-      errorMessage()
+      toast.dark("Cradentials can't be empty", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     } else {
       setSubmitted(true);
       setError(false);
-      successMessage();
+       obj = {"customerName": name, "customerEmail": email, "password":password};
+    
+    try {
+        const response = await axios.post(`http://localhost:8080/register`, { ...obj });
+        toast.dark("Registration Successfull", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
     }
+    catch(err){
+        console.log(err.response.data.message);
+        toast.dark(err.response.data.message, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+    }
+}
   };
 
   
