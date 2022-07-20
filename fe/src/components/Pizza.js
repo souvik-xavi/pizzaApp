@@ -1,11 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import axios from 'axios'
 
 const Pizza = () => {
-    const [pizzas, setPizzas] = React.useState([])
+    const [pizzas, setPizzas] = useState("");
+
+    const viewPizza = async ()=>{
+      try {
+        const res = await axios.get(`http://localhost:8080/viewPizza`);
+        console.log(res);
+      } catch (error) {
+        console.log("Error Found")
+      }
+       
+    }
   return (
     <div>
-    
+      {viewPizza()}
     </div>
   )
 }
