@@ -27,16 +27,16 @@ class PizzaAppApplicationTests {
 
 	}
 
-	@Test
-	public void testLogin() {
-		Customer c= new Customer("souvik","souvikghata21@","souvik");
-		cRepo.save(c);
-		User u=new User("souvikghata21@","souvik");
-		User uf=new User("souvikghata21@","/souvik");
-		String q=loginservices.login(u);
-		assertEquals("accepted", q);
-		String q1=loginservices.login(uf);
-		assertEquals("declined", q1);
-	}
+//	@Test
+//	public void testLogin() {
+//		Customer c= new Customer("souvik","souvikghata21@","souvik");
+//		cRepo.save(c);
+//		User u=new User("souvikghata21@","souvik");
+//		User uf=new User("souvikghata21@","/souvik");
+//		String q=loginservices.login(u);
+//		assertEquals("accepted", q);
+//		String q1=loginservices.login(uf);
+//		assertEquals("declined", q1);
+//	}
 
 }

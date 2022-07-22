@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class PizzaOrder {
 	@Id
 	@SequenceGenerator(
-	           name ="order_sequence",
+			   name ="order_sequence",
 	           sequenceName = "order_sequence",
 	           allocationSize = 1
 	   )
@@ -23,6 +23,15 @@ public class PizzaOrder {
 	           generator = "order_sequence"
 	   )
 	private int pizzaOrderId;
+	public PizzaOrder(int quantity) {
+		super();
+		this.quantity = quantity;
+	}
+	public PizzaOrder(int quantity, int couponId) {
+		super();
+		this.quantity = quantity;
+		this.couponId = couponId;
+	}
 	private int quantity;
 	private String size;
 	private double totalCost;
