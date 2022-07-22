@@ -11,13 +11,13 @@ import javax.persistence.Table;
 public class Coupan {
 	@Id
 	@SequenceGenerator(
-	           name ="user_sequence",
-	           sequenceName = "user_sequence",
+	           name ="coupon_sequence",
+	           sequenceName = "coupon_sequence",
 	           allocationSize = 1
 	   )
 	@GeneratedValue(
 	           strategy = GenerationType.SEQUENCE,
-	           generator = "user_sequence"
+	           generator = "coupon_sequence"
 	   )
 	private int coupanId;
 	private String coupanName;

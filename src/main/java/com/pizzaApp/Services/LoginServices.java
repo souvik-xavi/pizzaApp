@@ -30,7 +30,7 @@ public class LoginServices {
         
 
     }
-    public String login(User customer) {
+    public Customer login(User customer) {
 
         Customer cust=customerRepository.findByCustomerEmail(customer.getUserEmail());
         System.out.print(cust);;
@@ -41,11 +41,11 @@ public class LoginServices {
             if(cust.getPassword().equals(customer.getUserPassword())){
                 cust.setLoginStatus(true);
                 customerRepository.save(cust);
-                return "accepted";
+                return cust;
             }
         }
 
-        return "declined";
+        throw new ResourceNotFoundException("Password missmatched ");
         
     }
 	public void updateCustomer(Customer customer) 

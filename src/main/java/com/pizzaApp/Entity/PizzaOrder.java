@@ -14,13 +14,13 @@ import javax.persistence.Table;
 public class PizzaOrder {
 	@Id
 	@SequenceGenerator(
-	           name ="user_sequence",
-	           sequenceName = "user_sequence",
+	           name ="order_sequence",
+	           sequenceName = "order_sequence",
 	           allocationSize = 1
 	   )
 	@GeneratedValue(
 	           strategy = GenerationType.SEQUENCE,
-	           generator = "user_sequence"
+	           generator = "order_sequence"
 	   )
 	private int pizzaOrderId;
 	private int quantity;
