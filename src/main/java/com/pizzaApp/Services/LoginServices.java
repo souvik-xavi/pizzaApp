@@ -19,7 +19,7 @@ public class LoginServices {
     public boolean register(Customer customer) {
         Customer cust=customerRepository.findByCustomerEmail(customer.getCustomerEmail());
         if(cust==null){
-            customer.settype("admin");
+            customer.settype("user");
             customerRepository.save(customer);
             return true;
         }

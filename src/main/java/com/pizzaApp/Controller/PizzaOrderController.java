@@ -28,7 +28,7 @@ public class PizzaOrderController {
 //		System.out.println(pizzaId);
 //		System.out.println(couponId);
 		pizzaorderservices.bookPizzaOrder(pizzaOrder, customerId, pizzaId);
-        return ResponseEntity.status(HttpStatus.FOUND).body("Pizza Ordered");
+        return ResponseEntity.status(HttpStatus.OK).body("Pizza Ordered");
 	}
 
 	@GetMapping("/viewPizzaOrder/{customerId}")
