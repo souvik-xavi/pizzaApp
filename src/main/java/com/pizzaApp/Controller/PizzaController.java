@@ -43,8 +43,8 @@ public class PizzaController {
 	@PutMapping("/updatePizza/{customerId}")
 	public ResponseEntity updatePizza(@RequestBody Pizza pizza,@PathVariable int customerId) 
 	{		
-        pizzaservices.updatePizza(pizza,customerId);
-        return ResponseEntity.status(HttpStatus.FOUND).body("Pizza Updated");
+        
+        return ResponseEntity.status(HttpStatus.OK).body(pizzaservices.updatePizza(pizza,customerId));
 	}
 	@GetMapping("/viewPizza")
 	public List viewPizza()

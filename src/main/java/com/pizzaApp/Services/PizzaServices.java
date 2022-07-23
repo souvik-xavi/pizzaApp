@@ -49,19 +49,26 @@ public class PizzaServices {
 		}
 	}
 
-	public void updatePizza(Pizza pizza, int customerId) {
+	public Pizza updatePizza(Pizza pizza, int customerId) {
 		Customer cust = customerRepository.findById(customerId).get();
+		Pizza p = pizzaRepository.findById(pizza.getPizzaId()).get();
 		if (cust == null) {
 			throw new ResourceNotFoundException("User not found ");
 		} else if (cust.gettype().equals("user")) {
 			throw new NotAdminException("Access Denied");
-		} else if (pizzaRepository.findById(pizza.getPizzaId()).isPresent()) {
-			Pizza p = pizzaRepository.findById(pizza.getPizzaId()).get();
+		} else if (p!=null) {
+			//Pizza p = pizzaRepository.findById(pizza.getPizzaId()).get();
 			p.setPizzaCost(pizza.getPizzaCost());
 			p.setPizzaDescription(pizza.getPizzaDescription());
 			p.setPizzaName(pizza.getPizzaName());
 			p.setPizzaType(pizza.getPizzaType());
 			pizzaRepository.save(p);
+			System.out.println(p.getPizzaName());
+			return p;
+			//pizzaRepository.findById(pizza.getPizzaId()).isPresent()
+		}
+		else {
+			throw new ResourceNotFoundException("Pizza not found ");
 		}
 	}
 
