@@ -31,7 +31,7 @@ public class CouponController {
     }
 
     @GetMapping("/viewCoupon")
-    public List viewCoupon(@RequestBody Coupan coupan) {
+    public List viewCoupon() {
 
         return couponService.viewCoupon();
 
