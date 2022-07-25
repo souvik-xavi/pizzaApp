@@ -31,7 +31,7 @@ public class PizzaOrderServices {
 			throw new ResourceNotFoundException("User not found ");
 		}
 		if(!pizzaRepository.findById(pizzaid).isPresent()){
-			throw new ResourceNotFoundException("User not found ");
+			throw new ResourceNotFoundException("Pizza not found ");
 		}
 		pizzaOrder.setCustomerId(customerId);
 		pizzaOrder.setPizzaName(pizzaRepository.findById(pizzaid).get().getPizzaName());

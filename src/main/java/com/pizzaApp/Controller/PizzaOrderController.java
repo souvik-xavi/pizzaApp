@@ -22,11 +22,7 @@ public class PizzaOrderController {
 	@PostMapping("/bookPizzaOrder/{customerId}/{pizzaId}/{couponId}")
 	public ResponseEntity bookPizzaOrder(@RequestBody PizzaOrder pizzaOrder,@PathVariable int customerId, @PathVariable int pizzaId, @PathVariable int couponId) 
 	{
-		pizzaOrder.setCouponId(couponId);
-//		System.out.println(pizzaOrder);
-//		System.out.println(customerId);
-//		System.out.println(pizzaId);
-//		System.out.println(couponId);
+		pizzaOrder.setCouponId(couponId);		
 		pizzaorderservices.bookPizzaOrder(pizzaOrder, customerId, pizzaId);
         return ResponseEntity.status(HttpStatus.OK).body("Pizza Ordered");
 	}
