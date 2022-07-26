@@ -33,7 +33,7 @@ public class LoginServices {
     public Customer login(User customer) {
 
         Customer cust=customerRepository.findByCustomerEmail(customer.getUserEmail());
-        System.out.print(cust);;
+        
         if(cust==null){
             throw new ResourceNotFoundException("User not found ");
         }

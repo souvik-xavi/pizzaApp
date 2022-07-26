@@ -54,13 +54,18 @@ public class Pizza {
 	public void setPizzaCost(double pizzaCost) {
 		this.pizzaCost = pizzaCost;
 	}
-	public Pizza(int pizzaId, String pizzaType, String pizzaName, double pizzaCost) {
+	public Pizza(int pizzaId) {
 		super();
 		this.pizzaId = pizzaId;
-		this.pizzaType = pizzaType;
-		this.pizzaName = pizzaName;
-		this.pizzaCost = pizzaCost;
 	}
+	public Pizza(int pizzaId, String pizzaType, String pizzaName, String pizzaDescription, double pizzaCost) {
+	super();
+	this.pizzaId = pizzaId;
+	this.pizzaType = pizzaType;
+	this.pizzaName = pizzaName;
+	this.pizzaDescription = pizzaDescription;
+	this.pizzaCost = pizzaCost;
+}
 	public Pizza() {
 		super();
 	}
