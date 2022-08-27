@@ -67,6 +67,27 @@ class PizzaAppApplicationTests {
 
 	}
 	
+	@Test
+	void testviewPizzaOrder() {
+		PizzaOrder p = new PizzaOrder(2);
+		poRepo.save(p);
+		assertNotNull(poRepo.findAll());
+	}
+	
+	@Test
+	void testviewOrder() {
+		PizzaOrder pa = new PizzaOrder(5);
+		poRepo.save(pa);
+		assertNotNull(poRepo.findAll());
+	}
+	
+	@Test
+	void testbookPizzaOrder() {
+		PizzaOrder pb = new PizzaOrder(4);
+		poRepo.save(pb);
+		assertEquals(4, pb.getQuantity());
+	}
+
 	
 	
 }
